@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rate_very_strong">#C8E6C9</color>
+    <color name="rate_strong">#FFF9C4</color>
+    <color name="rate_weak">#FFE0B2</color>
+    <color name="rate_very_weak">#FFCDD2</color>
+</resources>

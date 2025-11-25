@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFF5F9FF">
+
+    <TextView
+        android:id="@+id/salutation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fx Currency Exchange - GBP"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh exchange rates"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/lastUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last updated: -"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/summaryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main currencies (vs GBP)"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:id="@+id/summaryEur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="EUR summary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/summaryUsd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="USD summary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/summaryJpy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="JPY summary"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by code or country (e.g. EUR, Euro)"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/rateList"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+
+    <TextView
+        android:id="@+id/rawDataDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:visibility="gone" />
+
+</LinearLayout>
